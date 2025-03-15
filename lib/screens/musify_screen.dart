@@ -10,7 +10,6 @@ class Musify extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Musify',
       theme: ThemeData(
         primarySwatch: Colors.teal,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -140,6 +139,7 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
       appBar: AppBar(
         title: const Text('Musify'),
         elevation: 0,
+        centerTitle: true,
       ),
       body: Column(
         children: [
@@ -154,7 +154,7 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.purple.withOpacity(0.3),
+                      color: Colors.teal.withOpacity(0.3),
                       blurRadius: 20,
                       offset: const Offset(0, 10),
                     ),
@@ -171,7 +171,7 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                         child: const Icon(
                           Icons.music_note,
                           size: 80,
-                          color: Colors.purple,
+                          color: Colors.teal,
                         ),
                       );
                     },
@@ -219,8 +219,8 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                   onChanged: (value) {
                     _audioPlayer.seek(Duration(seconds: value.toInt()));
                   },
-                  activeColor: Colors.purple,
-                  inactiveColor: Colors.purple.withOpacity(0.2),
+                  activeColor: Colors.teal,
+                  inactiveColor: Colors.teal.withOpacity(0.2),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -249,11 +249,11 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                 const SizedBox(width: 32),
                 Container(
                   decoration: BoxDecoration(
-                    color: Colors.purple,
+                    color: Colors.teal,
                     shape: BoxShape.circle,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.purple.withOpacity(0.3),
+                        color: Colors.teal.withOpacity(0.3),
                         blurRadius: 10,
                         offset: const Offset(0, 5),
                       ),
@@ -281,8 +281,8 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
           Padding(
             padding: const EdgeInsets.only(bottom: 24),
             child: TextButton.icon(
-              icon: const Icon(Icons.queue_music),
-              label: const Text("Daftar Putar"),
+              icon: const Icon(Icons.queue_music, color: Colors.teal),
+              label: const Text("Daftar Putar", style: TextStyle(color: Colors.teal),),
               onPressed: () {
                 showModalBottomSheet(
                   context: context,
@@ -333,7 +333,7 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                           width: 50,
                           height: 50,
                           color: Colors.grey[300],
-                          child: const Icon(Icons.music_note, color: Colors.purple),
+                          child: const Icon(Icons.music_note, color: Colors.teal),
                         );
                       },
                     ),
@@ -342,12 +342,12 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                     song.title,
                     style: TextStyle(
                       fontWeight: isPlaying ? FontWeight.bold : FontWeight.normal,
-                      color: isPlaying ? Colors.purple : null,
+                      color: isPlaying ? Colors.teal : null,
                     ),
                   ),
                   subtitle: Text(song.artist),
                   trailing: isPlaying
-                      ? const Icon(Icons.equalizer, color: Colors.purple)
+                      ? const Icon(Icons.equalizer, color: Colors.teal)
                       : null,
                   onTap: () {
                     Navigator.pop(context);
