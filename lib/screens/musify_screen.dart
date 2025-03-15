@@ -9,6 +9,7 @@ class Musify extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Musify',
       theme: ThemeData(
         primarySwatch: Colors.teal,
