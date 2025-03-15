@@ -34,22 +34,10 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
 
   final List<Song> _playlist = [
     Song(
-      title: "Lagu 1",
-      artist: "Artis 1",
-      url: "https://example.com/song1.mp3",
-      albumArt: "https://via.placeholder.com/400",
-    ),
-    Song(
-      title: "Lagu 2",
-      artist: "Artis 2",
-      url: "https://example.com/song2.mp3",
-      albumArt: "https://via.placeholder.com/400",
-    ),
-    Song(
-      title: "Lagu 3",
-      artist: "Artis 3",
-      url: "https://example.com/song3.mp3",
-      albumArt: "https://via.placeholder.com/400",
+      title: "Tokyo Streets",
+      artist: "Song by NAEMS",
+      url: "https://cms-public-artifacts.artlist.io/content/music/aac/929959_929942_NAEMS_-_Tokyo_Streets_-_EX-000533_-_Master_-_75_Bpm_-_280224_-_BOV_-_EXT_-_2444.aac",
+      albumArt: "https://artlist-albums.imgix.net/images/11519_929946_929946_NAEMS_-_C1_-_2.5K.jpg?auto=format&fit=max&w=640&q=75 640w, https://artlist-albums.imgix.net/images/11519_929946_929946_NAEMS_-_C1_-_2.5K.jpg?auto=format&fit=max&w=768&q=75 768w, https://artlist-albums.imgix.net/images/11519_929946_929946_NAEMS_-_C1_-_2.5K.jpg?auto=format&fit=max&w=1024&q=75 1024w, https://artlist-albums.imgix.net/images/11519_929946_929946_NAEMS_-_C1_-_2.5K.jpg?auto=format&fit=max&w=1280&q=75 1280w, https://artlist-albums.imgix.net/images/11519_929946_929946_NAEMS_-_C1_-_2.5K.jpg?auto=format&fit=max&w=1440&q=75 1440w, https://artlist-albums.imgix.net/images/11519_929946_929946_NAEMS_-_C1_-_2.5K.jpg?auto=format&fit=max&w=1600&q=75 1600w, https://artlist-albums.imgix.net/images/11519_929946_929946_NAEMS_-_C1_-_2.5K.jpg?auto=format&fit=max&w=1920&q=75 1920w, https://artlist-albums.imgix.net/images/11519_929946_929946_NAEMS_-_C1_-_2.5K.jpg?auto=format&fit=max&w=3840&q=75 3840w",
     ),
   ];
 
